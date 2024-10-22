@@ -1,0 +1,615 @@
+/*==External css*/
+.full-wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+.external{
+    font-weight: initial;
+    font-family: Arial, Helvetica, sans-serif;
+    color: orange;
+}
+.green.bold{
+    color: green;
+    font-weight: bolder;
+}
+.blue{
+    color: blue;
+    font-weight: bold;
+}
+#skyblue{
+    color: olive;
+    font-weight: bold;
+}
+.green{
+    color: green;
+}
+.text{
+    text-decoration: underline;
+}
+.tex{
+    text-decoration: overline;
+}
+.tx{
+    text-decoration: line-through;
+}
+.font{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+}
+.fon{
+    font-size: 200%;
+    text-transform: lowercase; 
+}
+.fnt{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.line-height{
+    line-height: 150%;
+}
+.ft{ /*style,variant,weight,size/line-height,family*/
+    font: italic small-caps bold 20px/150% Arial;
+}
+.image{
+    background-image: url(img/full.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+                            
+/*
+Backgrount-repeat:repeat-x;
+Backgrount-repeat:repeat-y;
+background-size: cover;
+background-size:250px 250px
+*/ 
+
+/*table part css */         
+table{
+    width: 650px;
+    text-align: center;
+    margin:50px auto;
+    background-color: #ddd;
+    
+}
+table,th,td{
+    border-collapse: collapse;
+    border: 2px solid red;
+}
+.total{
+    text-align: right;
+}
+caption{
+    margin-top: 5px;
+    background-color: #ddd;
+}
+.id{
+    background-color: greenyellow;
+}
+.foot{
+    background-color: rgb(142, 11, 236);
+}
+.id1{
+    background-color: green;
+}
+.tk400{
+    background-color: blue;
+    color: white;
+}
+
+/*'div' part css*/
+.div{
+    padding:50px ;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 300px;
+    height: 300px;
+    background-color: #ddd;
+}
+.div1{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 300px;
+    height: 300px;
+    background-color:blue;
+    color: white;
+}
+#wrapper > p{
+    color: tomato;
+}
+#wrapper1{
+    border: 2px solid red;
+    width: 400px;
+    height: 150px;
+    overflow: hidden;
+}
+#wrapper2{
+    padding: 5px;
+    margin-top: 10px;
+    border: 2px solid red;
+    width: 500px;
+    height: 150px;
+    color: white;
+    background-color: gray;
+    overflow: scroll;
+}
+#wrapper3 span{
+    background-color: red;
+    color: white;
+    display: block;
+}
+#wrapper4 span{
+    background-color: red;
+    color: white;
+    display: inline;
+}
+.block1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    float: left;
+}
+.block2{
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+    background-color:green;
+    float: left;
+}
+.block3{    
+    width: 200px;
+    height: 200px;
+    background-color:yellow;    
+}
+.block3:hover{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+}
+.hover{
+    color: red;
+}
+.hover:hover{
+    color: green;
+}
+.block4{    
+    width: 200px;
+    height: 200px;
+    background-color:yellow; 
+    transition: background-color 5s, width 3s , hight 2s ease-out ;
+
+}
+.block4:hover{
+    background-color: red;
+    width: 300px;
+    height: 300px;
+}
+.block5{    
+    width: 200px;
+    height: 200px;
+    background-color:skyblue; 
+    transition: background-color 5s, width 3s cubic-bezier(0, 0, 0.06, 0.95) , hight 2s ;
+
+}
+.block5:hover{
+    background-color:indigo;
+    width: 300px;
+    height: 300px;
+}
+.rotate{    
+    width: 200px;
+    height: 200px;
+    background-color:skyblue; 
+    -webkit-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -o-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -moz-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -ms-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+}
+.rotate:hover{
+    background-color:indigo;
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    
+}
+.skew{
+    margin-top: 5px;
+    width: 200px;
+    height: 200px;
+    background-color:red; 
+    -webkit-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -o-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -moz-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -ms-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+}   
+.skew:hover{
+    background-color:yellow;
+    width: 300px;
+    height: 300px;
+    transform:skew(360deg);
+    -webkit-transform:skew(360deg);
+    -o-transform:skew(360deg);
+    -ms-transform:skew(360deg);
+    -moz-transform:skew(360deg);
+
+}
+.skewX{
+    margin-top: 5px;
+    width: 200px;
+    height: 200px;
+    background-color:yellow; 
+    -webkit-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -o-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -moz-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -ms-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+}
+.skewX:hover{
+    background-color:red;
+    width: 300px;
+    height: 300px;
+    transform:skewX(90deg);
+    -o-transform:skewX(90deg);
+    -moz-transform:skewX(90deg);
+    -ms-transform:skewX(90deg);
+    -webkit-transform:skewX(90deg);
+    
+}
+.skewY{
+    margin-top: 5px;
+    width: 200px;
+    height: 200px;
+    background-color:green; 
+    -webkit-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -o-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -moz-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -ms-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+}
+.skewY:hover{
+    background-color:hotpink;
+    width: 300px;
+    height: 300px;
+    transform:skewY(90deg);
+    -webkit-transform:skewY(90deg);
+    -o-transform:skewY(90deg);
+    -ms-transform:skewY(90deg);
+    -moz-transform:skewY(90deg);
+}
+.scale{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    background-color:hotpink; 
+    -webkit-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -o-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -moz-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    -ms-transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+    transition: all 3s cubic-bezier(0, 0, 0.06, 0.95);
+}
+.scale:hover{
+    background-color:green;
+    transform:scale(1.5,3);
+    -webkit-transform:scale(1.5,3);
+    -o-transform:scale(1.5,3);
+    -ms-transform:scale(1.5,3);
+    -moz-transform:scale(1.5,3);
+}
+.paragraph{
+    background: url(img/nature.JPG) no-repeat;
+    background-attachment: fixed;
+    color: blue;
+}
+#ul{
+  list-style-type: circle;  
+}
+input[type=text]{
+    width: 200px;
+    height: 30px;
+    border: 2px solid red;
+    border-radius: 5%;
+    color: red;
+    font-weight: bold;
+    font-family: tahoma;
+}
+textarea{
+    color: blue;
+    font-family: tahoma;
+}
+input[type="submit"]{
+    width: 80px;
+    height: 36px;
+    padding: 5px;
+    color: red;
+    border-radius: 2px;
+}
+input[type="submit"]:hover{
+    color: blue;
+    background-color: yellow;
+}
+input[type="reset"]{
+    width: 80px;
+    height: 36px;
+    padding: 5px;
+    color: red;
+    border-radius: 2px;
+}
+input[type="reset"]:hover{
+    color: blue;
+    background-color: yellow;
+}
+button{
+    margin-bottom: 5px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    color: red;
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 2s ease;
+}
+button:hover{
+    color: teal;
+    background-color: yellow;
+    cursor: pointer;
+}
+.clear{
+    border: 1px solid red;
+}
+.clear-1{
+    border: 1px solid red;
+    clear: both;
+}
+
+.img{
+    margin-bottom: 10px;
+    float: left;
+}
+/*linear gradient*/ 
+.l-gradient-top{
+    width: 800px;
+    height: 150px;
+    background:linear-gradient( to top, red,green,yellow) ;
+    background:-o-linear-gradient( to top, red,green,yellow) ;
+    background:-webkit-linear-gradient( to top, red,green,yellow) ;
+    background:-moz-linear-gradient( to top, red,green,yellow) ;
+    
+}
+
+.l-gradient-right{
+    margin-top: 10px;
+    width: 800px;
+    height: 150px;
+    background:linear-gradient( to right, red,green,yellow) ;
+    background:-o-linear-gradient( to right, red,green,yellow) ;
+    background:-webkit-linear-gradient( to right, red,green,yellow) ;
+    background:-moz-linear-gradient( to right, red,green,yellow) ;
+}
+
+.l-gradient-bottom{
+    margin-top: 10px;
+    width: 800px;
+    height: 150px;
+    background:linear-gradient( to bottom, red,green,yellow) ;
+    background:-o-linear-gradient( to bottom, red,green,yellow) ;
+    background:-webkit-linear-gradient( to bottom, red,green,yellow) ;
+    background:-moz-linear-gradient( to bottom, red,green,yellow) ;
+}
+
+.l-gradient-left{
+    margin-top: 10px;
+    width: 800px;
+    height: 150px;
+    background:linear-gradient( to left, red,green,yellow) ;
+    background:-o-linear-gradient( to left, red,green,yellow) ;
+    background:-webkit-linear-gradient( to left, red,green,yellow) ;
+    background:-moz-linear-gradient( to left, red,green,yellow) ;
+}
+
+/*Radial gradient*/ 
+.r-gradient{
+    margin-top: 10px;
+    width: 800px;
+    height: 150px;
+    background:radial-gradient( red,green,yellow) ;
+    background:-o-radial-gradient( red,green,yellow) ;
+    background:-webkit-radial-gradient(red,green,yellow) ;
+    background:-moz-radial-gradient(red 30%,green 40%,yellow 30%) ;
+}
+
+/* Animation in CSS */
+
+.animation{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 2%;
+
+    -webkit-animation-name: mahfuz;
+    animation-name: mahfuz;
+
+    -webkit-animation-duration: .5s;
+    animation-duration: .5s;
+
+    -webkit-animation-iteration-count: 2;
+    animation-iteration-count: 2;
+}
+@keyframes mahfuz{
+    from{background-color: red;}
+    to{background-color: green; border-radius: 50%;}
+}
+@-webkit-keyframes mahfuz{
+    from{background-color: red;}
+    to{background-color: green; border-radius: 50%;}
+}
+
+.animation-1{
+    margin-top: 5px;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border-radius: 2%;
+
+    -webkit-animation-name: Rahman;
+    animation-name: Rahman;
+
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+
+    -webkit-animation-iteration-count: 5;
+    animation-iteration-count: 5;
+
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+@keyframes Rahman{
+    0%{background-color: red;}
+    20%{background-color: green;}
+    40%{background-color:yellow; width: 200px; height: 200px;}
+    60%{background-color: blue;}
+    80%{background-color: coral;}
+    100%{background-color: red;}
+    
+}
+@-webkit-keyframes Rahman{
+    0%{background-color: red;}
+    20%{background-color: green;}
+    40%{background-color:yellow; width: 200px; height: 200px;}
+    60%{background-color: blue;}
+    80%{background-color: coral;}
+    100%{background-color: red;}
+}
+ 
+ .position{
+    margin-top: 5px;
+    width: 150px;
+    height: 150px;
+    background-color:yellow;
+    position: relative;
+
+
+    -webkit-animation-name: Rahim;
+    animation-name: Rahim;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+@keyframes Rahim{
+    from{left: 0;}
+    to{left: 200px;}
+}
+@-webkit-keyframes Rahim{
+    from{left: 0;}
+    to{left: 200px;}
+}
+.rev-position{
+    margin-top: 5px;
+    width: 150px;
+    height: 150px;
+    background-color:red;
+    position: relative;
+
+
+    -webkit-animation-name: sattar;
+    animation-name: Sattar;
+
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+@keyframes Sattar{
+    from{left: 0;}
+    to{left: 200px;}
+}
+@-webkit-keyframes Sattar{
+    from{left: 0;}
+    to{left: 200px;}
+}
+.around-position{
+    margin-top: 5px;
+    width: 150px;
+    height: 150px;
+    background-color: royalblue;
+    position: relative;
+
+    animation-name: Hannan;
+    -webkit-animation-name: Hannan;
+
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate-reverse;
+    animation-direction: alternate-reverse;
+
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+@-webkit-keyframes Hannan{
+    0%{left: 0; top: 0; background: red;}
+    25%{left: 1140px; top: 0; background: green;}
+    50%{left: 1140px; top: 1140px; background: yellow;}
+    75%{left: 0; top: 1200px; background: blue;}
+    100%{left: 0; top: 0; background: red;}
+}
+@keyframes Hannan{
+    0%{left: 0; top: 0; background: red;}
+    25%{left: 1140px; top: 0; background: green;}
+    50%{left: 1140px; top: 1140px; background: yellow;}
+    75%{left: 0; top: 1200px; background: blue;}
+    100%{left: 0; top: 0; background: red;}
+}
+
+
+audio{
+    width: 500px;
+    height: 50px;
+    background-color:red;
+    border: 3px solid yellow;
+    padding: 5px;
+    border-radius: 30px;
+}
+audio:hover{
+    background-color: yellow;
+}
+video{
+    width: 550px;
+    height: 500px;
+}
+video:hover{
+    background-color: yellow;
+    border: red solid 3px;
+}
+iframe{
+    width: 600px;
+    height: 500px;
+    border: red solid 1px;
+}
